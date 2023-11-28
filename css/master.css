@@ -1,0 +1,231 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Start Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #ffa62b;
+  min-height: 150px;
+}
+
+nav .logo img {
+  width: 120px;
+}
+
+nav .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 45%;
+}
+
+nav .links a {
+  position: relative;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 10px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .links a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -2px;
+  background-color: #000000;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .links a:hover {
+  color: #000000;
+}
+
+nav .links a:hover::before {
+  width: 100%;
+}
+/* End Navbar */
+
+/* Start Body */
+
+.container-photo {
+  background-color: #ffa62b;
+}
+
+.container-photo .first-subcontainer {
+  text-align: center;
+  min-height: 180px;
+}
+
+.container-photo .first-subcontainer .info .faculty {
+  font-size: 70px;
+  padding-top: 65px;
+}
+
+.container-photo .first-subcontainer .info .college {
+  font-size: 100px;
+}
+
+.container-photo .first-subcontainer .info .unversity {
+  font-size: 70px;
+}
+
+.container-photo .first-subcontainer h4 {
+  margin-top: 90px;
+  font-size: 50px;
+}
+
+.container-photo .second-subcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-photo .second-subcontainer img {
+  width: 95%;
+}
+
+/* End Body */
+
+/* Start Activities */
+
+/* Start Events */
+.activities-container h3 {
+  margin-top: 170px;
+  margin-bottom: 25px;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.activities-container .best-student {
+  position: relative;
+}
+
+.activities-container .best-student .photo-background img {
+  width: 95%;
+  height: 95%;
+}
+
+.activities-container .best-student .photo-background {
+  background-color: #ffa62b;
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activities-container .best-student .first-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.activities-container .best-student .first-container .paragraph-events {
+  width: 38%;
+}
+
+.activities-container .best-student .first-container .paragraph-events h4 {
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+.activities-container .best-student .first-container .paragraph-events p {
+  color: #4d4d4d;
+}
+
+.activities-container
+  .best-student
+  .first-container
+  .paragraph-events
+  .see-more-button {
+  width: 190px;
+  height: 40px;
+  background-color: #ffa62b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.activities-container
+  .best-student
+  .first-container
+  .paragraph-events
+  .see-more-button
+  a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+
+.activities-container .best-student .second-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 55px;
+}
+
+.activities-container .best-student .second-container img {
+  padding: 20px;
+  width: 43%;
+}
+/* End Events */
+
+/* Start Our Students */
+
+.activities-container .our-student h3 {
+  margin-top: 170px;
+  margin-bottom: 25px;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.activities-container .our-student .our-student-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.activities-container .our-student .our-student-photos img {
+  width: 45%;
+  padding: 15px;
+}
+/* End Our Students */
+/* End Activities */
