@@ -52,12 +52,12 @@ body {
 }
 
 :root {
-  --main-color: #ffa62b;
-  --second-color: #000000;
-  --third-color: #4d4d4d;
-  --forth-color: #161616;
-  --fifth-color: #f8f8f8;
-  --sixth-color: #878b8b;
+  --main-color: #ffa62b; /* Primary Color */
+  --second-color: #000000; /* Primary Text */
+  --third-color: #4d4d4d; /*  */
+  --forth-color: #161616; /*  */
+  --fifth-color: #f8f8f8; /* Text / Icons */
+  --sixth-color: #878b8b; /*  */
 }
 /* End Global Rules */
 
