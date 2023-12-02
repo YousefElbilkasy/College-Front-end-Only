@@ -1,3 +1,4 @@
+/* Start Global Rules */
 body {
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -9,6 +10,17 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media (min-width = 786px) {
+}
+
+@media (min-width = 992px) {
+}
+
+@media (min-width = 1200px) {
+}
+
+/* End Global Rules */
 
 /* Start Navbar */
 
@@ -41,7 +53,7 @@ nav .links a {
   color: rgba(0, 0, 0, 0.7);
   font-weight: 600;
   font-size: 20px;
-  padding: 0 10px;
+  padding: 0 5px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
