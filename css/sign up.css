@@ -56,6 +56,10 @@ nav .links a {
   transition: 0.3s;
 }
 
+nav .links .sign-up {
+  color: var(--second-color);
+}
+
 nav .links a::before {
   content: "";
   position: absolute;
@@ -92,10 +96,7 @@ nav .links a:hover::before {
 .big-container .container {
   display: flex;
   flex-direction: column;
-}
-
-.big-container .signup-container {
-  width: 30%;
+  width: 60%;
   background: var(--fifth-color);
   padding: 20px;
   border-radius: 10px;
@@ -106,10 +107,15 @@ nav .links a:hover::before {
   flex-wrap: wrap;
 }
 
+.big-container .container .signup-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .big-container .signup-container a button {
   cursor: pointer;
   width: 150px;
-  margin-bottom: 20px;
+  margin: 20px;
   padding: 12px;
   border-radius: 25px;
   border: 1px solid #ccc;
