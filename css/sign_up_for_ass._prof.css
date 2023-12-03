@@ -98,6 +98,11 @@ select {
   outline: none;
 }
 
+select[name="gender"],
+select[name="class_level"] {
+  font-size: 16px;
+}
+
 input[type="file"] {
   margin-top: 10px; /* Adjust margin based on your design */
   padding: 12px;
@@ -111,7 +116,7 @@ input[type="file"] {
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-top: 30px;
   color: var(--second-color);
 }
 

@@ -67,8 +67,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-input[type="date"],
-select {
+input[type="date"] {
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -87,17 +86,21 @@ select {
 select {
   width: 105%;
   margin-bottom: 20px;
-  padding: 12px;
+  padding: 10px;
   border-radius: 25px;
   border: 1px solid #ccc;
   transition: all 0.3s ease-in-out;
   color: #555;
-  font-size: 16px;
   outline: none;
 }
 
+select[name="gender"],
+select[name="class_level"] {
+  font-size: 16px;
+}
+
 input[type="file"] {
-  margin-top: 10px; /* Adjust margin based on your design */
+  margin-top: 12px; /* Adjust margin based on your design */
   padding: 12px;
   border-radius: 25px;
   border: 1px solid #ccc;
@@ -108,6 +111,7 @@ input[type="file"] {
 }
 
 label {
+  margin-top: 30px;
   display: block;
   margin-bottom: 5px;
   color: var(--second-color);
@@ -125,7 +129,7 @@ input[type="tel"]:focus,
 input[type="date"]:focus,
 input[type="file"]:focus,
 select:focus {
-  outline: 1px var(--main-color) solid;
+  outline: 2px var(--main-color) solid;
 }
 
 input[type="submit"] {

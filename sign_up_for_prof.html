@@ -11,6 +11,8 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="css/master.css" />
     <link rel="stylesheet" href="css/sign up for prof.css" />
+    <!-- Normalize File -->
+    <link rel="stylesheet" href="css/normalize.css" />
     <!-- Tab Icon -->
     <link rel="shortcut icon" href="imgs/logo (2).png" type="fci-icon" />
     <!-- Font Awesome Library -->
@@ -29,8 +31,8 @@
         <a href="index.html" class="home">HOME</a>
         <a href="about.html" class="about">ABOUT</a>
         <a href="contact.html" class="contact">CONTACT</a>
-        <a href="#" class="log-in">LOG IN</a>
-        <a href="#" class="sign-up">SIGN UP</a>
+        <a href="log_in.html" class="log-in">LOG IN</a>
+        <a href="sign_up.html" class="sign-up">SIGN UP</a>
       </div>
     </nav>
     <!-- End Navbar -->
@@ -69,12 +71,17 @@
                 placeholder="Password"
                 required
               /><br />
-              <select name="class_level" required>
+              <!-- <select name="class_level" required>
                 <option value="" disabled selected>Select Class Level</option>
                 <option value="Level 1">Level 1</option>
                 <option value="Level 2">Level 2</option>
                 <option value="Level 3">Level 3</option>
                 <option value="Level 4">Level 4</option></select
+                ><br /> -->
+              <select name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option></select
               ><br />
             </div>
             <div class="column">
@@ -104,11 +111,6 @@
                 placeholder="Date of Birth"
                 required
               /><br />
-              <select name="gender" required>
-                <option value="" disabled selected>Select Gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option></select
-              ><br />
             </div>
             <div class="upload-file">
               <label for="profile-picture">Upload Your File</label>
@@ -155,7 +157,8 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="#">Log in</a>
+            <a href="log_in.html">Log In</a>
+            <a href="sign_up.html">Sign Up</a>
           </div>
         </div>
         <div class="third-column">
