@@ -25,7 +25,7 @@ body {
   margin: 30px 0;
 }
 
-.signup-container {
+.big-sign-up-container .signup-container {
   width: 80%;
   background: #fff;
   padding: 20px;
@@ -47,6 +47,7 @@ form {
 
 .big-sign-up-container .signup-container i {
   font-size: 100px;
+  margin-bottom: 20px;
   color: var(--main-color);
 }
 
