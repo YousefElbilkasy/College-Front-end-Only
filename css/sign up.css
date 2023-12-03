@@ -56,10 +56,6 @@ nav .links a {
   transition: 0.3s;
 }
 
-nav .links .log-in {
-  color: var(--second-color);
-}
-
 nav .links a::before {
   content: "";
   position: absolute;
@@ -84,29 +80,48 @@ nav .links a:hover::before {
 }
 /* End Navbar */
 
-/* Start Log in */
-
-.big-log-in-container {
-  margin: 50px 0;
+/* Start Sign Up */
+.bign-sign-up-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px 0;
 }
 
-.login-container {
+.signup-container {
   width: 320px;
-  background: var(--fifth-color);
+  background: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.5s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.bign-sign-up-container .signup-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bign-sign-up-container .signup-container img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  align-self: center; /* Center the image horizontally within its container */
+}
+
+.bign-sign-up-container .signup-container i {
+  font-size: 100px;
+  color: var(--main-color);
+}
 input[type="text"],
 input[type="password"],
-input[type="submit"] {
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
   width: calc(100% - 40px);
   margin-bottom: 20px;
   padding: 12px;
@@ -117,13 +132,17 @@ input[type="submit"] {
   font-size: 16px;
   outline: none;
 }
+
 input[type="text"]:focus,
-input[type="password"]:focus {
-  border-color: var(--main-color);
-  outline: solid 1px var(--main-color);
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+  outline: 1px var(--main-color) solid;
 }
+
 input[type="submit"] {
-  width: calc(100% - 40px);
   background: var(--main-color);
   color: var(--fifth-color);
   cursor: pointer;
@@ -133,58 +152,20 @@ input[type="submit"] {
   text-transform: uppercase;
   border: none;
   border-radius: 25px;
-  padding: 12px;
+  padding: 12px 50px; /* Adjust the padding to center the button */
   outline: none;
+  align-self: center; /* Center the button horizontally within its container */
 }
+
 input[type="submit"]:hover {
   background: var(--main-color);
 }
+
 input[type="submit"]:active {
   transform: scale(0.95);
 }
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #333;
-  font-size: 24px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.login-container i {
-  font-size: 100px;
-  color: var(--main-color);
-}
-
-.login-container form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.login-container form .remember-me {
-  margin-bottom: 15px;
-}
-
-.login-container form label {
-  color: var(--second-color);
-}
-img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* End Log in */
+/* End Sign Up */
 
 /* Start Footer */
 .footer-container {
