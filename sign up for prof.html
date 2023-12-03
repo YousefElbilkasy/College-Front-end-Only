@@ -10,14 +10,14 @@
     />
     <!-- CSS File -->
     <link rel="stylesheet" href="css/master.css" />
-    <link rel="stylesheet" href="css/sign up.css" />
+    <link rel="stylesheet" href="css/sign up for prof.css" />
     <!-- Tab Icon -->
     <link rel="shortcut icon" href="imgs/logo (2).png" type="fci-icon" />
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
+    <title>Sign Up For Professors</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -35,41 +35,97 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Start Sign Up -->
-
-    <div class="big-container">
-      <div class="container">
-        <h2>Please Select Type of Sign Up</h2>
-        <div class="signup-container">
-          <div class="prof-container">
-            <a href="">
-              <button class="prof">
-                <i class="fa-solid fa-user-tie"></i>
-                <h6>Professor</h6>
-              </button>
-            </a>
+    <!-- Start Sign Up for Profs -->
+    <div class="big-sign-up-container">
+      <div class="signup-container">
+        <i class="fa-solid fa-user-tie"></i>
+        <h2>Sign Up for Students</h2>
+        <form action="#" method="post">
+          <div class="columns">
+            <div class="column">
+              <input
+                type="text"
+                name="first-name"
+                placeholder="First Name"
+                required
+              /><br />
+              <input
+                type="text"
+                name="last-name"
+                placeholder="Last Name"
+                required
+              /><br />
+              <input
+                type="tel"
+                name="contact-number"
+                placeholder="Contact Number"
+                maxlength="11"
+                minlength="11"
+                required
+              /><br />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+              /><br />
+              <select name="class_level" required>
+                <option value="" disabled selected>Select Class Level</option>
+                <option value="Level 1">Level 1</option>
+                <option value="Level 2">Level 2</option>
+                <option value="Level 3">Level 3</option>
+                <option value="Level 4">Level 4</option></select
+              ><br />
+            </div>
+            <div class="column">
+              <input
+                type="text"
+                name="middle-name"
+                placeholder="Middle Name"
+                required
+              /><br />
+              <input
+                type="tel"
+                name="national-id"
+                placeholder="National ID"
+                maxlength="14"
+                minlength="14"
+                required
+              /><br />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              /><br />
+              <input
+                type="date"
+                name="date-of-birth"
+                placeholder="Date of Birth"
+                required
+              /><br />
+              <select name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option></select
+              ><br />
+            </div>
+            <div class="upload-file">
+              <label for="profile-picture">Upload Your File</label>
+              <input
+                type="file"
+                name="profile-file"
+                id="profile-file"
+                accept=""
+              />
+              <small>Please, Upload Your profile (PDF)</small>
+            </div>
           </div>
-          <div class="assoc-prof-container">
-            <a href="">
-              <button class="assoc-prof">
-                <i class="fa-solid fa-chalkboard-user"></i>
-                <h6>Prof. Assistant</h6>
-              </button>
-            </a>
-          </div>
-          <div class="student-container">
-            <a href="sign up for students.html">
-              <button class="student">
-                <i class="fa-solid fa-user-graduate"></i>
-                <h6>Student</h6>
-              </button>
-            </a>
-          </div>
-        </div>
+          <input type="submit" value="Sign Up" />
+        </form>
       </div>
     </div>
-
-    <!-- End Sign Up -->
+    <!-- End Sign Up for Profs -->
 
     <!-- Start Footer -->
 
