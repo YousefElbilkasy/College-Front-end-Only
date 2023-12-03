@@ -80,142 +80,58 @@ nav .links a:hover::before {
 }
 /* End Navbar */
 
-/* Start Sign Up For Student */
-.big-sign-up-container {
+/* Start Sign Up */
+
+.big-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px 0;
 }
 
-.signup-container {
-  width: 80%;
-  background: #fff;
+.big-container .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-container .signup-container {
+  width: 30%;
+  background: var(--fifth-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-form {
-  width: 90%;
-}
-
-.big-sign-up-container .signup-container h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.big-sign-up-container .signup-container i {
-  font-size: 100px;
-  color: var(--main-color);
-}
-
-.columns {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
-.column {
-  width: 48%;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border-radius: 25px;
-  border: 1px solid #ccc;
-  transition: all 0.3s ease-in-out;
-  color: #555;
-  font-size: 16px;
-  outline: none;
-}
-
-.upload-file {
-  margin: 25px auto;
-}
-
-select {
-  width: 105%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border-radius: 25px;
-  border: 1px solid #ccc;
-  transition: all 0.3s ease-in-out;
-  color: #555;
-  font-size: 16px;
-  outline: none;
-}
-
-input[type="file"] {
-  margin-top: 10px; /* Adjust margin based on your design */
-  padding: 12px;
-  border-radius: 25px;
-  border: 1px solid #ccc;
-  transition: all 0.3s ease-in-out;
-  color: #555;
-  font-size: 16px;
-  outline: none;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--second-color);
-}
-
-small {
-  color: var(--sixth-color);
-  font-size: 12px;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="date"]:focus,
-input[type="file"]:focus,
-select:focus {
-  outline: 1px var(--main-color) solid;
-}
-
-input[type="submit"] {
-  background: var(--main-color);
-  color: var(--fifth-color);
+.big-container .signup-container a button {
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
+  width: 150px;
+  margin-bottom: 20px;
+  padding: 12px;
   border-radius: 25px;
-  padding: 12px 50px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  color: #555;
+  font-size: 16px;
   outline: none;
-  align-self: center;
-  display: flex;
-  margin: auto;
 }
 
-input[type="submit"]:hover {
-  background: var(--main-color);
+.big-container .signup-container a button h6 {
+  margin: 0;
+  padding: 5px;
+  padding-top: 15px;
+  font-size: 15px;
 }
 
-input[type="submit"]:active {
-  transform: scale(0.95);
+.big-container .signup-container a button i {
+  font-size: 30px;
+  color: var(--main-color);
 }
 
-/* End Sign Up For Student */
+/* End Sign Up */
 
 /* Start Footer */
 .footer-container {
