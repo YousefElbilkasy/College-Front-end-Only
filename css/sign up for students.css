@@ -89,7 +89,7 @@ nav .links a:hover::before {
 }
 
 .signup-container {
-  width: 320px;
+  width: 80%;
   background: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -99,30 +99,39 @@ nav .links a:hover::before {
   align-items: center;
 }
 
+form {
+  width: 90%;
+}
+
 .bign-sign-up-container .signup-container h2 {
   margin-bottom: 20px;
   color: #333;
-}
-
-.bign-sign-up-container .signup-container img {
-  border-radius: 50%;
-  margin-bottom: 20px;
-  width: 100px;
-  height: 100px;
-  align-self: center; /* Center the image horizontally within its container */
 }
 
 .bign-sign-up-container .signup-container i {
   font-size: 100px;
   color: var(--main-color);
 }
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 48%;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
 input[type="date"],
 select {
-  width: calc(100% - 40px);
+  width: 100%;
   margin-bottom: 20px;
   padding: 12px;
   border-radius: 25px;
@@ -133,11 +142,50 @@ select {
   outline: none;
 }
 
+.upload-file {
+  margin: 25px auto;
+}
+
+select {
+  width: 105%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  color: #555;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="file"] {
+  margin-top: 10px; /* Adjust margin based on your design */
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  color: #555;
+  font-size: 16px;
+  outline: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--second-color);
+}
+
+small {
+  color: var(--sixth-color);
+  font-size: 12px;
+}
+
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="date"]:focus,
+input[type="file"]:focus,
 select:focus {
   outline: 1px var(--main-color) solid;
 }
@@ -152,9 +200,11 @@ input[type="submit"] {
   text-transform: uppercase;
   border: none;
   border-radius: 25px;
-  padding: 12px 50px; /* Adjust the padding to center the button */
+  padding: 12px 50px;
   outline: none;
-  align-self: center; /* Center the button horizontally within its container */
+  align-self: center;
+  display: flex;
+  margin: auto;
 }
 
 input[type="submit"]:hover {
