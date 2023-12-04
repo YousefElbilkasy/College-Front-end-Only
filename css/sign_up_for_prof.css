@@ -53,6 +53,14 @@ form {
   color: var(--main-color);
 }
 
+.big-sign-up-container .signup-container form a {
+  color: var(--main-color);
+  font-size: 15px;
+  display: flex;
+  margin: 25px 0;
+  justify-content: center;
+}
+
 .columns {
   display: flex;
   justify-content: space-between;

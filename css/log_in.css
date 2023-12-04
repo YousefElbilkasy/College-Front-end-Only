@@ -47,7 +47,7 @@ input[type="text"],
 input[type="password"],
 input[type="submit"] {
   width: calc(100% - 40px);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 12px;
   border-radius: 25px;
   border: 1px solid #ccc;
@@ -101,8 +101,17 @@ input[type="submit"]:active {
   align-items: center;
 }
 
+.big-log-in-container .login-container form .have-an-account {
+  margin-bottom: 20px;
+}
+
+.big-log-in-container .login-container form .have-an-account a {
+  color: var(--main-color);
+  font-size: 12px;
+}
+
 .login-container form .remember-me {
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
 }
